@@ -11,30 +11,30 @@
   <body class="font bg-gray body-theme">
     <div class="wrapper">
       <header>
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" class="shadow" />
-        {% endif %}
+        
+          <img src="assets/images/me.jpg" alt="Logo" class="shadow" />
+        
         <div class="card shadow">
             <h2 class="card-title">
               <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
-                基本信息
+                Fiona Wang
             </h2>
             <hr>
             <h4 class="card-item">
               <i class="fa fa-user-o" aria-hidden="true"></i>
-              &nbsp;&nbsp;{{site.name}}
+              &nbsp;&nbsp;Fiona Resume
             </h4>
             <h4 class="card-item">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              &nbsp;&nbsp;{{site.phone}}
+              &nbsp;&nbsp;188888888888
             </h4>
             <h4 class="card-item">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              &nbsp;&nbsp;{{site.email}}
+              &nbsp;&nbsp;fionawang888@hotmail.com
             </h4>
             <h4 class="card-item">
               <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-              &nbsp;&nbsp;&nbsp;{{site.address}}
+              &nbsp;&nbsp;&nbsp;Melbourne
             </h4>
         </div>
 
@@ -46,25 +46,25 @@
             <hr>
             <h4 class="card-item">
               <i class="fa fa-university" aria-hidden="true"></i>
-              &nbsp;&nbsp;{{site.school}}
+              &nbsp;&nbsp;RMIT
             </h4>
             <h4 class="card-item">
               <i class="fa fa-diamond" aria-hidden="true"></i>
-              &nbsp;&nbsp;{{site.profession}}
+              &nbsp;&nbsp;Project Manager
             </h4>
             <h4 class="card-item">
               <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              &nbsp;&nbsp;{{site.degree}}
+              &nbsp;&nbsp;Bachelor degree
             </h4>
             <h4 class="card-item">
               <i class="fa fa-id-card-o" aria-hidden="true"></i>
-              &nbsp;&nbsp;{{site.credential}}
+              &nbsp;&nbsp; Winner of art design(media) in 2018 Melbourne International Arts Festival
             </h4>
         </div>
       </header>
       <section class="section card shadow">
 
-      {{ content }}
+      
 
       </section>
       <!-- <footer>
@@ -75,7 +75,7 @@
       </footer> -->
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -84,6 +84,6 @@
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
     </script>
-    {% endif %}
+    
   </body>
 </html>
